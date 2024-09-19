@@ -1,0 +1,33 @@
+#Se basan en clave valor
+key: 12
+key1: "hola mundo"
+key2: hola mundo #No necesita comillas
+
+person:
+  name: John
+  age: 30
+  city: New York
+  #listas
+  items:
+    - item1
+    - item2
+    - item3
+  #listas con valor
+  items2:
+    - item1: hola
+    - item2: hola
+    - item3: hola
+
+#Strings multilinea
+scripts: >
+  hola
+  hola
+  test
+
+scripts2: |
+  touch hola.txt
+  echo "hola";
+
+#Podemos validar nuestro Yaml en linea o crear un script para saber si todo esta bien
+#yaml lint https://www.yamllint.com/
+#Es uno de los lenguajes mas utilziados para archivos de configuración y más que todos en DevOps con DockerCompose.

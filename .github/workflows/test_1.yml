@@ -31,7 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     #Para generar dependencia de jobs utilizamos needs para que se ejecute después de completar el anterior
     needs: [hola] #también puede ser solamente hola
-
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
       - name: LS
         run: ls -all
