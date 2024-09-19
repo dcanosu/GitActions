@@ -21,6 +21,8 @@ jobs:
   
   other:
     runs-on: ubuntu-latest
+    #Para generar dependencia de jobs utilizamos needs para que se ejecute después de completar el anterior
+    needs: [hola] #también puede ser solamente hola
 
     steps:
       - name: LS
